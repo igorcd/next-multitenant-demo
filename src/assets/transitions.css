@@ -1,0 +1,32 @@
+/* Slide */
+.slide-enter {
+    @apply translate-x-full;
+}
+
+.slide-enter-active {
+    @apply translate-x-0 duration-500 ease-in-out;
+}
+
+.slide-exit {
+    @apply translate-x-0;
+}
+
+.slide-exit-active {
+    @apply -translate-x-full duration-500 ease-in-out;
+}
+
+/* Fade */
+.fade-enter{
+    opacity: 0;
+}
+.fade-exit{
+    opacity: 1;
+}
+.fade-enter-active{
+    opacity: 1;
+    transition: opacity 350ms;
+}
+.fade-exit-active{
+    opacity: 0;
+    transition: opacity 350ms;
+}

@@ -1,0 +1,22 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended",
+    "eslint:recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "@typescript-eslint/object-curly-spacing": ["warn", "always"],
+    "@typescript-eslint/no-unused-vars": "warn",
+    "@typescript-eslint/indent": ["warn", 4, { "ignoredNodes": ["JSXAttribute"]}],
+    "@typescript-eslint/semi": ["error"],
+    "@typescript-eslint/no-inferrable-types": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "react/jsx-indent" : ["warn", 4],
+    "react/jsx-indent-props": ["warn", "first"],
+    "@next/next/no-img-element": "off"
+  }
+}
