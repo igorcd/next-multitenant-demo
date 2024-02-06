@@ -24,6 +24,8 @@ export default function Slide5() {
 
                     </div>
                 </div>
+                
+                <a className="text-white text-lg font-bold" target="_blank" href="http://visas-fr.localhost:3000">Check example</a>
             </div>
         </Slide>
     );

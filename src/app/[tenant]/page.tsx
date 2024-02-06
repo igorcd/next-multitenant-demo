@@ -13,12 +13,12 @@ export default function HomePage(props: { params: { tenant: string } }) {
 
             <ul className="text-white text-center">
                 <li>
-                    <a href={`/${tenant}/news`}>Go to news</a>
-                    {/* <a href={`/news`}>Go to knews</a> */}
+                    {/* <a href={`/${tenant}/news`}>Go to news</a> */}
+                    <a href={`/news`}>Go to news</a>
                 </li>
                 <li>
-                    <a href={`/${tenant}/services`}>Go to services</a>
-                    {/* <a href={`/services`}>Go to services</a> */}
+                    {/* <a href={`/${tenant}/services`}>Go to services</a> */}
+                    <a href={`/services`}>Go to services</a>
                 </li>
             </ul>
         </div>

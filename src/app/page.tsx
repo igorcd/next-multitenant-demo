@@ -4,6 +4,7 @@ import Slide2 from "@/slides/slide-2/Slide2";
 import Slide3 from "@/slides/slide-3/Slide3";
 import Slide4 from "@/slides/slide-4/Slide4";
 import Slide5 from "@/slides/slide-5/Slide5";
+import Slide6 from "@/slides/slide-6/Slide6";
 
 export default function Home() {
     return (
@@ -14,6 +15,7 @@ export default function Home() {
                 <Slide3/>
                 <Slide4/>
                 <Slide5/>
+                <Slide6/>
             </div>
             <SlideControls/>
         </>

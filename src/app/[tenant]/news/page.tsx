@@ -23,7 +23,8 @@ export default async function NewsPage(props: { params: { tenant: string } }) {
                 }
             </div>
 
-            <a href={`/${tenant}`} className="text-white">Back</a>
+            {/* <a href={`/${tenant}`} className="text-white">Back</a> */}
+            <a href={`/`} className="text-white">Back</a>
         </div>
     );
 }
