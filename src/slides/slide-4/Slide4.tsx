@@ -21,9 +21,10 @@ export default function Slide4() {
                     <div>
                         <p className="text-red-500 text-center">Cons</p>
                         <p className="text-white">Tenants shares the same localStorage and cookies</p>
-
                     </div>
                 </div>
+
+                <a className="text-white text-lg font-bold" target="_blank" href="/visas-fr">Check example</a>
             </div>
         </Slide>
     );
