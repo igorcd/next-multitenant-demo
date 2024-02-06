@@ -9,7 +9,7 @@ export default function FullMultiTenant() {
             <p className="text-center text-white mb-4 text-xl">Multi-tenant</p>
             <div className="p-4 border border-white rounded-lg flex flex-col gap-4">
                 <div>
-                    <GlobeIcon className="w-10 stroke-blue-200 mx-auto"/>
+                    <GlobeIcon className="w-10 stroke-green-200 mx-auto"/>
                     <p className="text-white text-center">application/tenant</p>
                 </div>
 
