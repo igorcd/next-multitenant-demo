@@ -15,9 +15,9 @@ export default function Slide2() {
         if(mode == 0) {
             return (
                 <div className="flex items-center gap-10" key={0}>
-                    <SingleTenant title="visas-au"/>
-                    <SingleTenant title="vcas"/>
-                    <SingleTenant title="visas-fr"/>                    
+                    <SingleTenant ipBase={10} title="visas-au"/>
+                    <SingleTenant ipBase={20} title="vcas"/>
+                    <SingleTenant ipBase={30} title="visas-fr"/>                    
                 </div>
             );
         }
