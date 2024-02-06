@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
-const tenants = ["visas-au", "visas-fr", "vcas"];
+const tenants = ["visas-au", "visas-fr", "vcas", "visas-nl"];
 
 export default function middleware(req: NextRequest) {
     const tenant = req.headers.get('host')?.split('.')[0];
