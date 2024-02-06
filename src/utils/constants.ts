@@ -1,1 +1,1 @@
-export const TENANTS = ['vcas', 'visas-fr', 'visas-au'];
+export const TENANTS = ['vcas', 'visas-fr', 'visas-au', 'visas-nl'];
