@@ -1,9 +1,13 @@
+import { TENANTS } from "@/utils/constants";
+import { headers } from "next/headers";
 
 export default async function NewsPage(props: { params: { tenant: string } }) {
+    const hasSubdomain = TENANTS.includes(headers().get('host')?.split('.')[0] ?? '');
     const { tenant } = props.params;
 
-    const data = await fetch(`http://localhost:3000/${tenant}/api/news`)
+    const data = await fetch(`${process.env.BASE_URL}/${tenant}/api/news`)
         .then(resp => resp.json()) as { title: string; content: string; picture: string }[];
+
 
     return (
         <div className="flex flex-col gap-10 items-center justify-center p-10">
@@ -23,8 +27,7 @@ export default async function NewsPage(props: { params: { tenant: string } }) {
                 }
             </div>
 
-            {/* <a href={`/${tenant}`} className="text-white">Back</a> */}
-            <a href={`/`} className="text-white">Back</a>
+            <a href={hasSubdomain ? '/' : `/${tenant}`} className="text-white">Back</a>
         </div>
     );
 }

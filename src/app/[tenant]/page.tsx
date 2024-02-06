@@ -1,6 +1,11 @@
+import { TENANTS } from "@/utils/constants";
+import { headers } from "next/headers";
+
 export default function HomePage(props: { params: { tenant: string } }) {
 
     const { tenant } = props.params;
+
+    const hasSubdomain = TENANTS.includes(headers().get('host')?.split('.')[0] ?? '');
 
     return (
         <div className="flex items-center justify-center h-screen flex-col gap-10">
@@ -13,12 +18,10 @@ export default function HomePage(props: { params: { tenant: string } }) {
 
             <ul className="text-white text-center">
                 <li>
-                    {/* <a href={`/${tenant}/news`}>Go to news</a> */}
-                    <a href={`/news`}>Go to news</a>
+                    <a href={hasSubdomain ? '/news' : `/${tenant}/news`}>Go to news</a>
                 </li>
                 <li>
-                    {/* <a href={`/${tenant}/services`}>Go to services</a> */}
-                    <a href={`/services`}>Go to services</a>
+                    <a href={hasSubdomain ? '/services' : `/${tenant}/services`}>Go to services</a>
                 </li>
             </ul>
         </div>
