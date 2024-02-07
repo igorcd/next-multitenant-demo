@@ -10,7 +10,7 @@ export default function Slide1() {
                      alt="logo"/>
 
                 <h1 className='text-5xl font-medium bg-clip-text text-gray-200 text-center max-w-2xl leading-[4rem] mb-24'>
-                    Multi-tenant application with Next.js
+                    Multi-tenant application
                 </h1>
 
                 <SlideButton target={2}>
